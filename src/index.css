@@ -1,5 +1,7 @@
+
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +13,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Holigas';
+  src: url('/src/assets/fonts/Holigas-x3rgr.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
@@ -31,8 +40,9 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 5.2em;
+  line-height: 1;
+  margin: 1rem 1rem;
 }
 
 button {
