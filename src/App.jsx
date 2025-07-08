@@ -1,10 +1,10 @@
 import React from "react";
+import HeroSection from "./sections/HeroSection";
 
 function App() {
     return (
         <div>
-            <h1>Hi, I'm Nickol Jairo Belgica</h1>
-            <p>My Software Developer Journey</p>
+            <HeroSection/>
         </div>
     );
 }

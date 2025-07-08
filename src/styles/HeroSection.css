@@ -1,0 +1,99 @@
+.heroContainer {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #012025; */
+}
+
+/* Navigation */
+
+.navi {
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navi h1 {
+    font-size: 2em;
+}
+
+.navi ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    list-style: none;
+    gap: 1rem;
+}
+
+.navi button {
+    all: unset;
+    cursor: pointer;
+    /* font-weight: bold; */
+    transition: transform 0.3s ease;
+}
+
+.navi button:hover {
+    transform: scale(1.2);
+    color: goldenrod;
+    font-weight: bold;
+}
+
+/* Hero Main Text */
+
+.heroMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.heroMain section {
+    display: flex;
+    gap: 1em;
+}
+
+.heroMain section .emDashLine {
+    background-color: white;
+    width: 3em;
+    height: .2em;
+    align-self: center;
+}
+
+.heroMain h1, .heroMain p {
+   text-align: center;
+}
+.heroMain h1 {
+    font-family: 'Holigas';
+    font-size: 8em;
+    font-weight:900;
+}
+.heroMain p {
+    font-size: 1.5em;
+}
+
+.heroFoot section:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% 2%;
+    gap: 1em;
+}
+
+.backdropSilk {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
