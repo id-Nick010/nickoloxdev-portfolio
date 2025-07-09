@@ -1,8 +1,82 @@
 .aboutMeRoot {
     background-color: #012025;
     display: flex;
+    flex-direction: column;
     height:100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
+    background-image: url('../assets/images/myPicBackG.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.sectionCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    width: 90vw;
+    margin: 5vh 10vw;
+}
+
+.MainAboutMe {
+    width: 33vw;
+}
+
+.MainAboutMe h1 {
+    font-size:8vh;
+    font-family: 'Rubik';
+    color: #ffe23f;
+    margin: 0px;
+}
+
+.MainAboutMe h1 span {
+    font-size: 50%;
+}
+
+.MainAboutMe p {
+    font-size: 1.5em;
+}
+
+.asideBox {
+    font-size: xx-large;
+    width: 33vw;
+    text-align:end;
+}
+
+.asideBox h2 {
+    font-family: 'Rubik';
+    font-size: 1.7em;
+    margin: 0px;
+}
+
+.divider {
+    background-color:#ffe23f;
+    height: .3vh;
+    width: 90%;
+    margin-bottom: 2%;
+    border-radius:100%;
+    opacity: .5;
+}
+
+.footerEducation {
+    display: flex;
+
+    justify-content:start;
+    align-items: center;
+    margin: 10px 10px;
+    padding-left: 10vw;
+    width: 100vw;
+    gap: 5vw;
+}
+
+.footerEducation h4, .footerEducation p {
+    margin: 5px;
+    font-size: large;
+}
+
+.footerEducation h4  {
+    color:#ffe23f;
 }
