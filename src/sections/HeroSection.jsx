@@ -35,7 +35,7 @@ function HeroSection() {
                     <div className='emDashLine'></div>
                     <h2>and this is...</h2>
                 </section>
-                <h1>MY SOFTWARE<br/>DEVELOPER JOURNEY</h1>
+                <h1 className='mainHeroHeader'>MY SOFTWARE<br/>DEVELOPER JOURNEY</h1>
                 <p> I blend creative design with efficient code <br/>to build projects that not only work but enchant</p> </main>
             <footer className='heroFoot'>
                 <section className='scrollIndicator'>
