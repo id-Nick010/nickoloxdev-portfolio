@@ -7,27 +7,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function HeroSection() {
     return (
-        <div className='heroContainer' id='home'>
-            <div className='backdropSilk'>
-                <Silk
-                    speed={5}
-                    scale={1}
-                    color="#025d40"
-                    noiseIntensity={1.5}
-                    rotation={0}
-                />
-            </div>
-            <nav className='navi'>
-                <h1 className='navLogo'><a href='#home'>NXD</a></h1>
-                <ul className='sectionNavs'>
-                    <li><button>About</button></li>
-                    <li><button>Skills</button></li>
-                    <li><button>Certifications</button></li>
-                    <li><button>Projects</button></li>
-                    <li><button>Experience</button></li>
-                    <li><button>Contact</button></li>
-                </ul>
-            </nav>
+        <section className='heroContainer' id='home'>
             <main className='heroMain'>
                 <section>
                     <h2>Hi, Im </h2>
@@ -35,7 +15,7 @@ function HeroSection() {
                     <div className='emDashLine'></div>
                     <h2>and this is...</h2>
                 </section>
-                <h1>MY SOFTWARE<br/>DEVELOPER JOURNEY</h1>
+                <h1 className='mainHeroHeader'>MY SOFTWARE<br/>DEVELOPER JOURNEY</h1>
                 <p> I blend creative design with efficient code <br/>to build projects that not only work but enchant</p> </main>
             <footer className='heroFoot'>
                 <section className='scrollIndicator'>
@@ -54,7 +34,7 @@ function HeroSection() {
                     </a>
                 </section>
             </footer>
-        </div>
+        </section>
     );
 }
 

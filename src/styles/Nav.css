@@ -1,0 +1,48 @@
+/* Navigation */
+
+.navRoot {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+.navi {
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+
+}
+
+.navi .navLogo {
+    font-size: 2em;
+    letter-spacing: -2px;
+    font-weight: 1000;
+    font-family: 'Featherly'
+
+}
+
+.navi ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    list-style: none;
+    gap: 1rem;
+}
+
+.navi button {
+    all: unset;
+    cursor: pointer;
+    /* font-weight: bold; */
+    transition: transform 0.3s ease;
+}
+
+.navi button:hover {
+    transform: scale(1.2);
+    color: goldenrod;
+    font-weight: bold;
+}
