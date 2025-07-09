@@ -17,7 +17,21 @@
 
 @font-face {
   font-family: 'Holigas';
-  src: url('/src/assets/fonts/Holigas-x3rgr.ttf') format('truetype');
+  src: url('/src/assets/fonts/Holigas.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Featherly';
+  src: url('/src/assets/fonts/Featherly.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crustaceans';
+  src: url('/src/assets/fonts/Crustaceans-Signature.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/HeroSection.css'; 
 import angleDownIcon from '../assets/angles-down-solid.svg';
 import Silk from '../components/design/Silk';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 
 function HeroSection() {
     return (
@@ -29,15 +31,15 @@ function HeroSection() {
             <main className='heroMain'>
                 <section>
                     <h2>Hi, Im </h2>
-                    <h2>Nickol Jairo Belgica</h2>
+                    <h2 className='heroName'>Nickol Jairo Belgica</h2>
                     <div className='emDashLine'></div>
                     <h2>and this is...</h2>
                 </section>
                 <h1>MY SOFTWARE<br/>DEVELOPER JOURNEY</h1>
                 <p> I blend creative design with efficient code <br/>to build projects that not only work but enchant</p> </main>
             <footer className='heroFoot'>
-                <section>
-                    <img src={angleDownIcon} alt="scroll down" width='40' height='40'/>
+                <section className='scrollIndicator'>
+                    <FontAwesomeIcon icon={faAnglesDown} />
                     <p>Scroll</p>
                 </section>
                 <section>
