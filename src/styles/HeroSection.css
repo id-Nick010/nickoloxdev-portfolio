@@ -89,9 +89,15 @@
     font-size: 1.5em;
 }
 
+/* Hero Footer */
+
 .heroFoot {
     justify-self: end;
     margin-top: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .heroFoot section:first-child {
@@ -109,6 +115,7 @@
     animation: bounce 2.2s infinite;
     height: 5vh;
     width: 5vw;
+    color: lightgray;
 }
 
 @keyframes bounce {
@@ -116,6 +123,22 @@
     50% {transform:translateY(8px);}
 }
 
+
+.heroFoot .heroSocialsLink{
+    margin: 1% 2%;
+    display: flex;
+}
+.heroFoot a {
+    margin: 1vh .5vw;
+    color: lightgray;
+    opacity: 0.5;
+}
+
+.heroFoot a:hover {
+    color:#f0d644;
+    transform: scale(1.1);
+    opacity: 1;
+}
 
 /* Backdrop Background */
 

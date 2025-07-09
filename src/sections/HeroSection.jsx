@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/HeroSection.css'; 
-import angleDownIcon from '../assets/angles-down-solid.svg';
 import Silk from '../components/design/Silk';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesDown, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function HeroSection() {
     return (
@@ -39,11 +39,19 @@ function HeroSection() {
                 <p> I blend creative design with efficient code <br/>to build projects that not only work but enchant</p> </main>
             <footer className='heroFoot'>
                 <section className='scrollIndicator'>
-                    <FontAwesomeIcon icon={faAnglesDown} />
+                    <FontAwesomeIcon icon={faAnglesDown} size='1x'/>
                     <p>Scroll</p>
                 </section>
-                <section>
-                    {/* buttons for socials links */}
+                <section className='heroSocialsLink'>
+                    <a href='https://github.com/id-Nick010' target='_blank'>
+                        <FontAwesomeIcon icon={faGithub} size='2x'/>
+                    </a>
+                    <a href='https://google.com' target='_blank'>
+                        <FontAwesomeIcon icon={faLinkedin} size='2x'/>
+                    </a>
+                    <a href='https://google.com' target='_blank'>
+                        <FontAwesomeIcon icon={faSquareEnvelope} size='2x'/>
+                    </a>
                 </section>
             </footer>
         </div>
