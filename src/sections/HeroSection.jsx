@@ -7,7 +7,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function HeroSection() {
     return (
-        <div className='heroContainer'>
+        <div className='heroContainer' id='home'>
             <div className='backdropSilk'>
                 <Silk
                     speed={5}
@@ -18,7 +18,7 @@ function HeroSection() {
                 />
             </div>
             <nav className='navi'>
-                <h1>NXD</h1>
+                <h1 className='navLogo'><a href='#home'>NXD</a></h1>
                 <ul className='sectionNavs'>
                     <li><button>About</button></li>
                     <li><button>Skills</button></li>
