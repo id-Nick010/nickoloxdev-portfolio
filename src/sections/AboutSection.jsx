@@ -3,7 +3,7 @@ import '../styles/AboutSection.css';
 
 function AboutSection() {
     return(
-        <section className='aboutMeRoot'>
+        <section className='aboutMeRoot' id='aboutMe'>
             <div className="tint"></div>
             <section className='sectionCenter'>
                 <main className='MainAboutMe'>

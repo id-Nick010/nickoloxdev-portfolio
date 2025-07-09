@@ -41,14 +41,13 @@
 }
 
 .asideBox {
-    font-size: xx-large;
-    width: 33vw;
+    width: clamp(40vw, 1vm, 33vm);
     text-align:end;
 }
 
 .asideBox h2 {
     font-family: 'Rubik';
-    font-size: 1.7em;
+    font-size: 3.5em;
     margin: 0px;
 }
 

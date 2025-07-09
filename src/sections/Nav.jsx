@@ -7,7 +7,7 @@ const Nav = () => {
             <nav className='navi'>
                 <h1 className='navLogo'><a href='#home'>NXD</a></h1>
                 <ul className='sectionNavs'>
-                    <li><button>About</button></li>
+                    <li><a href='#aboutMe'><button>About</button></a></li>
                     <li><button>Skills</button></li>
                     <li><button>Certifications</button></li>
                     <li><button>Projects</button></li>
