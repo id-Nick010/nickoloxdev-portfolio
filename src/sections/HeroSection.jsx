@@ -46,10 +46,10 @@ function HeroSection() {
                     <a href='https://github.com/id-Nick010' target='_blank'>
                         <FontAwesomeIcon icon={faGithub} size='2x'/>
                     </a>
-                    <a href='https://google.com' target='_blank'>
+                    <a href='https://linkedin.com/in/njbelgica' target='_blank'>
                         <FontAwesomeIcon icon={faLinkedin} size='2x'/>
                     </a>
-                    <a href='https://google.com' target='_blank'>
+                    <a href='mailto:njbelgica158@gmail.com' target='_blank'>
                         <FontAwesomeIcon icon={faSquareEnvelope} size='2x'/>
                     </a>
                 </section>
