@@ -13,11 +13,26 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 @font-face {
   font-family: 'Holigas';
-  src: url('/src/assets/fonts/Holigas-x3rgr.ttf') format('truetype');
+  src: url('/src/assets/fonts/Holigas.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Featherly';
+  src: url('/src/assets/fonts/Featherly.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crustaceans';
+  src: url('/src/assets/fonts/Crustaceans-Signature.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,8 +42,13 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
+a:visited{
+  color: inherit;
+}
+
 a:hover {
-  color: #535bf2;
+  color: #f0d644;
 }
 
 body {

@@ -1,11 +1,13 @@
 import React from 'react';
 import '../styles/HeroSection.css'; 
-import angleDownIcon from '../assets/angles-down-solid.svg';
 import Silk from '../components/design/Silk';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesDown, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function HeroSection() {
     return (
-        <div className='heroContainer'>
+        <div className='heroContainer' id='home'>
             <div className='backdropSilk'>
                 <Silk
                     speed={5}
@@ -16,7 +18,7 @@ function HeroSection() {
                 />
             </div>
             <nav className='navi'>
-                <h1>NXD</h1>
+                <h1 className='navLogo'><a href='#home'>NXD</a></h1>
                 <ul className='sectionNavs'>
                     <li><button>About</button></li>
                     <li><button>Skills</button></li>
@@ -29,19 +31,27 @@ function HeroSection() {
             <main className='heroMain'>
                 <section>
                     <h2>Hi, Im </h2>
-                    <h2>Nickol Jairo Belgica</h2>
+                    <h2 className='heroName'>Nickol Jairo Belgica</h2>
                     <div className='emDashLine'></div>
                     <h2>and this is...</h2>
                 </section>
                 <h1>MY SOFTWARE<br/>DEVELOPER JOURNEY</h1>
                 <p> I blend creative design with efficient code <br/>to build projects that not only work but enchant</p> </main>
             <footer className='heroFoot'>
-                <section>
-                    <img src={angleDownIcon} alt="scroll down" width='40' height='40'/>
+                <section className='scrollIndicator'>
+                    <FontAwesomeIcon icon={faAnglesDown} size='1x'/>
                     <p>Scroll</p>
                 </section>
-                <section>
-                    {/* buttons for socials links */}
+                <section className='heroSocialsLink'>
+                    <a href='https://github.com/id-Nick010' target='_blank'>
+                        <FontAwesomeIcon icon={faGithub} size='2x'/>
+                    </a>
+                    <a href='https://linkedin.com/in/njbelgica' target='_blank'>
+                        <FontAwesomeIcon icon={faLinkedin} size='2x'/>
+                    </a>
+                    <a href='mailto:njbelgica158@gmail.com' target='_blank'>
+                        <FontAwesomeIcon icon={faSquareEnvelope} size='2x'/>
+                    </a>
                 </section>
             </footer>
         </div>

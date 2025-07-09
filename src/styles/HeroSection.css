@@ -3,7 +3,6 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    /* background-color: #012025; */
 }
 
 /* Navigation */
@@ -21,8 +20,12 @@
     z-index: 1000;
 }
 
-.navi h1 {
+.navi .navLogo {
     font-size: 2em;
+    letter-spacing: -2px;
+    font-weight: 1000;
+    font-family: 'Featherly'
+
 }
 
 .navi ul {
@@ -59,6 +62,8 @@
 .heroMain section {
     display: flex;
     gap: 1em;
+    justify-content: center;
+    align-items:center;
 }
 
 .heroMain section .emDashLine {
@@ -71,13 +76,32 @@
 .heroMain h1, .heroMain p {
    text-align: center;
 }
+
+.heroName {
+    color: #f0d644;
+    font-family: 'Crustaceans';
+    font-size: 3.5em;
+}
+
 .heroMain h1 {
-    font-family: 'Holigas';
+    font-family: 'Featherly';
     font-size: 8em;
     font-weight:900;
+    color: #f0d644;
 }
 .heroMain p {
     font-size: 1.5em;
+}
+
+/* Hero Footer */
+
+.heroFoot {
+    justify-self: end;
+    margin-top: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .heroFoot section:first-child {
@@ -86,9 +110,41 @@
     justify-self: start;
     justify-content: space-evenly;
     align-items: center;
-    margin: 2% 2%;
+    height: 5vh;
+    margin: 1% 2%;
     gap: 1em;
 }
+
+.heroFoot .scrollIndicator {
+    animation: bounce 2.2s infinite;
+    height: 5vh;
+    width: 5vw;
+    color: lightgray;
+}
+
+@keyframes bounce {
+    0%, 100% {transform:translateY(0);}
+    50% {transform:translateY(8px);}
+}
+
+
+.heroFoot .heroSocialsLink{
+    margin: 1% 2%;
+    display: flex;
+}
+.heroFoot a {
+    margin: 1vh .5vw;
+    color: lightgray;
+    opacity: 0.5;
+}
+
+.heroFoot a:hover {
+    color:#f0d644;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Backdrop Background */
 
 .backdropSilk {
     height: 100vh;
