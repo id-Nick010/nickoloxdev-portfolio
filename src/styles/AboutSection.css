@@ -1,8 +1,100 @@
 .aboutMeRoot {
     background-color: #012025;
     display: flex;
+    flex-direction: column;
     height:100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
+    background-image: url('../assets/images/myPicBackG.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.sectionCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    width: 90vw;
+    margin: 5vh 10vw;
+}
+
+.MainAboutMe {
+    width: 33vw;
+}
+
+.MainAboutMe h1 {
+    font-size:8vh;
+    font-family: 'Rubik';
+    color: #ffe23f;
+    margin: 0px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(
+        90deg,
+        #b8860b 0%,
+        #ffd700 30%,
+        #fff8dc 50%,
+        #ffd700 70%,
+        #b8860b 100%
+    );
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 10s linear infinite;
+
+}
+
+.MainAboutMe h1 span {
+    font-size: 50%;
+}
+
+.MainAboutMe p {
+    font-size: 1.5em;
+}
+
+.asideBox {
+    width: clamp(40vw, 1vm, 33vm);
+    text-align:end;
+}
+
+.asideBox h2 {
+    font-family: 'Rubik';
+    font-size: 3.5em;
+    margin: 0px;
+}
+
+.asideBox h2 .highH {
+    color: #ffe23f;
+}
+
+.divider {
+    background-color:#ffe23f;
+    height: .3vh;
+    width: 90%;
+    margin-bottom: 2%;
+    border-radius:100%;
+    opacity: .5;
+}
+
+.footerEducation {
+    display: flex;
+
+    justify-content:start;
+    align-items: center;
+    margin: 10px 10px;
+    padding-left: 10vw;
+    width: 100vw;
+    gap: 5vw;
+}
+
+.footerEducation h4, .footerEducation p {
+    margin: 5px;
+    font-size: large;
+}
+
+.footerEducation h4  {
+    color:#ffe23f;
 }
