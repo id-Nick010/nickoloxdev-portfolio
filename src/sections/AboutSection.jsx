@@ -16,7 +16,7 @@ function AboutSection() {
                     </p>
                 </main>
                 <aside className='asideBox'>
-                    <h2>DEVXFRONTEND</h2>
+                    <h2><span className="highH">DEV</span>X<span className="highH">FRONTEND</span></h2>
                     <h2>BACKEND</h2>
                     <h2>AI/ML</h2>
                     <h2>WEB</h2>
