@@ -1,0 +1,38 @@
+.valuesContainerRoot {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    height: 12em;
+    width: 12em;
+    background: #c4c4c4;
+    color: black;
+    transition: background 0.3s ease;
+    border-radius: 1.5rem;
+    margin: auto auto;
+}
+/* 
+.valuesContainerRoot {
+    padding: 1rem;
+    margin: 0.5rem;
+    background: #222;
+    color: white;
+    transition: background 0.10s ease;
+} */
+
+.highlight {
+    animation: pulse 0.8s ease;
+    background: #ffe23f;
+}
+
+@keyframes pulse {
+    0% { background: #b8860b; }
+    50% { background: #ffd700; }
+    100% { background: #ffe23f; }
+}
+
+.valuesContainerRoot h5 {
+    font-size: 1.5em;
+    font-weight: 500;
+}

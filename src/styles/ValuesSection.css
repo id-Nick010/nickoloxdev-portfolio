@@ -1,0 +1,28 @@
+.valuesRoot {
+    background-color: #012025;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.valuesRoot h1 {
+    justify-self: center;
+    font-size: 5vh;
+    font-family: 'Rubik';
+    margin-bottom: 4vh;
+}
+
+.mainGridValues {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:1em;
+}
+
+.valuesRoot footer{
+    margin: 4em auto;
+    justify-self:center;
+    color: white;
+    font-size: 1.3em;
+}
+

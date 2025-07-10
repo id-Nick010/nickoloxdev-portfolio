@@ -2,7 +2,9 @@ import React from "react";
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
 import Nav from "./sections/Nav";
+import ValuesSection from "./sections/ValuesSection";
 import Silk from "./components/design/Silk";
+
 
 function App() {
     return (
@@ -19,6 +21,7 @@ function App() {
             <Nav/>
             <HeroSection/>
             <AboutSection/>
+            <ValuesSection/>
         </div>
     );
 }
