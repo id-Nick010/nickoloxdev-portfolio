@@ -34,6 +34,10 @@ function AboutSection() {
                     <h4>NC2 Java Programming</h4>
                     <p>Tesda NRG</p>
                 </section>
+                <section>
+                    <h4>Web Development Workshop</h4>
+                    <p>Zuitt Coding Bootcamp</p>
+                </section>
             </footer>
         </section>
         

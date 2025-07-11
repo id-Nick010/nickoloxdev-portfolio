@@ -16,10 +16,10 @@ const ValuesSection = () => {
     }, []);
 
     const valueQuotes = [
-        "1", 
-        "2", 
+        "Growth is most alive when I’m at the edge of what I know. I thrive in the tension between uncertainty and discovery. My joy lives not in mastery, but in the stretch beyond.", 
+        "My greatest days aren't defined by results, but by how fully I show up in each moment.", 
         "Hyper-efficiency isn't just doing more in less time, it's wielding every tool, shortcut, and system like extensions of your mind.",
-        "4"
+        "Art leads. I craft not for efficiency alone, but to evoke, to elevate, to inspire."
     ];
     const valueProps = [
         {name:"Growth", imgSrc: <FontAwesomeIcon icon={faArrowUpRightDots} size='4x' color='black'/> },
