@@ -22,10 +22,10 @@ const ValuesSection = () => {
         "Art leads. I craft not for efficiency alone, but to evoke, to elevate, to inspire."
     ];
     const valueProps = [
-        {name:"Growth", imgSrc: <FontAwesomeIcon icon={faArrowUpRightDots} size='4x' color='black'/> },
-        {name:"Max Effort", imgSrc: <FontAwesomeIcon icon={faGaugeHigh} size='4x' color='black'/> },
-        {name:"Hyper-Efficient", imgSrc: <FontAwesomeIcon icon={faGears} size='4x' color='black'/> },
-        {name:"Artistic", imgSrc: <FontAwesomeIcon icon={faMagicWandSparkles} size='4x' color='black'/> },
+        {name:"Growth", imgSrc: <FontAwesomeIcon icon={faArrowUpRightDots} size='4x' color='white'/> },
+        {name:"Max Effort", imgSrc: <FontAwesomeIcon icon={faGaugeHigh} size='4x' color='white'/> },
+        {name:"Hyper-Efficient", imgSrc: <FontAwesomeIcon icon={faGears} size='4x' color='white'/> },
+        {name:"Artistic", imgSrc: <FontAwesomeIcon icon={faMagicWandSparkles} size='4x' color='white'/> },
     ];
     return(
         <section className="valuesRoot">

@@ -11,10 +11,10 @@ function App() {
         <div className="width:100vw">
             <div className='backdropSilk'>
                 <Silk
-                    speed={5}
+                    speed={10}
                     scale={1}
                     color="#025d40"
-                    noiseIntensity={1.5}
+                    noiseIntensity={2}
                     rotation={0}
                 />
             </div>

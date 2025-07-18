@@ -16,15 +16,34 @@
 
 .mainGridValues {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap:1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:4em;
 }
 
 .valuesRoot footer{
-    margin: 4em auto;
+    margin: 2em 15%;
     justify-self:center;
     color: white;
     font-size: 1.3em;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.valuesRoot footer h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(
+    -45deg,
+    #a76a4c 0%,
+    #cf8a68 20%,
+    #f5a67e 50%,
+    #ffe3a4 70%,
+    #fafbbd 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 20px rgba(255, 228, 164, 0.425);
 }
 
