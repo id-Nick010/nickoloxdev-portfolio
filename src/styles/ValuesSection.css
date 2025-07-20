@@ -17,8 +17,9 @@
 .mainGridValues {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap:4em;
+    gap:2em;
 }
+
 
 .valuesRoot footer{
     margin: 2em 15%;
