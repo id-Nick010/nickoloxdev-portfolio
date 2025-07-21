@@ -1,5 +1,4 @@
 import '../styles/SkillsSection.css';
-import Tabs from '../components/Tabs.jsx'
 
 const SkillsSection = ( ) => {
     return(
