@@ -16,7 +16,7 @@ function AboutSection() {
                     </p>
                 </main>
                 <aside className='asideBox'>
-                    <h2><span className="highH">DEV</span>X<span className="highH">FRONTEND</span></h2>
+                    <h2>FRONTEND</h2>
                     <h2>BACKEND</h2>
                     <h2>AI/ML</h2>
                     <h2>WEB</h2>
@@ -25,7 +25,6 @@ function AboutSection() {
             </section>
             <div className='divider'></div>
             <footer className='footerEducation'>
-                <h4>Education</h4>
                 <section>
                     <h4>BS Computer Science</h4>
                     <p>Bicol University</p>
