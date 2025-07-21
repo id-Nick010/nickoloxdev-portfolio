@@ -5,13 +5,10 @@
     justify-content: center;
     align-items: center;
     padding: 1.5em;
-    height: 14em;
-    width: 14em;
-    /* background: #c4c44D; */
+    width: min(50%, 200px);
+    aspect-ratio: 1/ 1;
     color: white;
-      /* color: #FFD700;     */
     transition: background 0.3s ease;
-    border-radius: 1.5rem;
     margin: auto auto;
 
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(205, 207, 56, 0));
@@ -45,7 +42,7 @@
 }
 
 .valuesContainerRoot h5 {
-    font-size: 1.5em;
+    font-size: 120%;
     font-weight: 500;
     margin: 1rem auto;
 }

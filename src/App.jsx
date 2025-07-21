@@ -4,11 +4,12 @@ import AboutSection from "./sections/AboutSection";
 import Nav from "./sections/Nav";
 import ValuesSection from "./sections/ValuesSection";
 import Silk from "./components/design/Silk";
+import SkillsSection from "./sections/SkillsSection";
 
 
 function App() {
     return (
-        <div className="width:100vw">
+        <div className="">
             <div className='backdropSilk'>
                 <Silk
                     speed={10}
@@ -22,6 +23,7 @@ function App() {
             <HeroSection/>
             <AboutSection/>
             <ValuesSection/>
+            <SkillsSection/>
         </div>
     );
 }

@@ -17,8 +17,6 @@
   scroll-behavior: smooth;
 }
 
-
-
 @font-face {
   font-family: 'Holigas';
   src: url('/src/assets/fonts/Holigas.ttf') format('truetype');
@@ -58,7 +56,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
 }
 
@@ -99,4 +97,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-

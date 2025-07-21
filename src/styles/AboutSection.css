@@ -2,28 +2,30 @@
     background-color: #012025;
     display: flex;
     flex-direction: column;
-    height:100vh;
+    min-height:100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
     background-image: url('../assets/images/myPicBackG.jpg');
     background-size: cover;
     background-position: center;
-
+    padding: 2vh 0;
+    box-sizing: border-box;
 }
 
 .sectionCenter {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
     width: 90vw;
-    margin: 5vh 10vw;
+    margin: auto 10vw;
 }
 
 .MainAboutMe {
-    width: 33vw;
+    width: 40%;
 }
+
+
 
 .MainAboutMe h1 {
     font-size:8vh;
@@ -52,23 +54,19 @@
 }
 
 .MainAboutMe p {
-    font-size: 1.5em;
+    font-size: clamp(20px, 10vw, 28px);
 }
 
 .asideBox {
-    width: clamp(40vw, 1vm, 33vm);
     text-align:end;
 }
 
 .asideBox h2 {
     font-family: 'Rubik';
-    font-size: 3.5em;
-    margin: 0px;
+    font-size: clamp(1rem, 20vw, 3.5rem);
+    margin: 1px;
 }
 
-.asideBox h2 .highH {
-    color: #ffe23f;
-}
 
 .divider {
     background-color:#ffe23f;
@@ -81,20 +79,40 @@
 
 .footerEducation {
     display: flex;
-
-    justify-content:start;
+    justify-content:center;
     align-items: center;
-    margin: 10px 10px;
-    padding-left: 10vw;
-    width: 100vw;
+    text-align: center;
+    min-height: 20vh;
     gap: 5vw;
 }
 
 .footerEducation h4, .footerEducation p {
     margin: 5px;
-    font-size: large;
+    font-size: clamp(10px, 10vw, 20px);
 }
+
 
 .footerEducation h4  {
     color:#ffe23f;
+}
+
+@media (max-width: 768px){
+    .sectionCenter {
+        flex-direction: column;
+    }
+    .MainAboutMe {
+        width: 80%;
+    }
+    .MainAboutMe p{
+        text-align: justify;
+    }
+    .asideBox {
+        text-align: center;
+    }
+    .asideBox h2{
+        font-size: clamp(10px, 5vw, );
+    }
+    .footerEducation{
+        flex-direction: column;
+    }
 }
