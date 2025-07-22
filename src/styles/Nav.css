@@ -1,61 +1,60 @@
 /* Navigation */
 
 .navRoot {
-    width: 100vw;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    position: fixed;
+  box-sizing: border-box;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
 }
 
 .navi {
-    margin-inline: 5% 5%;
-    margin-top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
-
+  margin-inline: 5% 5%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .navi .navLogo {
-    font-size: 2em;
-    letter-spacing: -5px;
-    font-weight: 1000;
-    font-family: 'Rubik';
-    margin: 0px;
+  font-size: 2em;
+  letter-spacing: -5px;
+  font-weight: 1000;
+  font-family: "Rubik";
+  margin: 0px;
 }
 
 .sectionNavs {
-    display:flex;
-    flex-direction: row;
-    justify-content: start;
-    list-style: none;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  list-style: none;
+  gap: 1rem;
 }
 
 .navi button {
-    all: unset;
-    cursor: pointer;
-    font-weight: bold;
-    transition: transform 0.3s ease;
+  all: unset;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
 }
 
 .navi button:hover {
-    transform: scale(1.2);
-    color: goldenrod;
-    font-weight: bold;
+  transform: scale(1.2);
+  color: goldenrod;
+  font-weight: bold;
 }
 
 a {
-    color:inherit;
+  color: inherit;
 }
 
 a:visited {
-    color:inherit;
+  color: inherit;
 }
-
 
 /* Hamburger Styles */
 .hamburger {
@@ -72,12 +71,11 @@ a:visited {
   border-radius: 2px;
 }
 
-
 /* Responsive Menu */
 @media (max-width: 768px) {
-    .navi {
-        margin-top: 1%;
-    }
+  .navi {
+    margin-top: 1%;
+  }
   .hamburger {
     display: flex;
   }
@@ -93,17 +91,20 @@ a:visited {
   .sectionNavs.open {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
     background-color: #012025;
     position: absolute;
     top: 100%;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 999;
-    width: 80%;
+    width: 50%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: 1px solid rgba(253, 255, 128, 0.438);
   }
 }

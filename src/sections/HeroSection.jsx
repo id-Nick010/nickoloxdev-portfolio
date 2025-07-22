@@ -11,7 +11,6 @@ function HeroSection() {
                 <section>
                     <h2>Hi, Im </h2>
                     <h2 className='heroName'>Nickol Jairo Belgica</h2>
-                    <div className='emDashLine'></div>
                     <h2>and this is...</h2>
                 </section>
                 <h1 className='mainHeroHeader'>MY SOFTWARE<br/>DEVELOPER JOURNEY</h1>

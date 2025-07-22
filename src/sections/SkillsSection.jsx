@@ -1,10 +1,11 @@
+import Tabs from '../components/Tabs.jsx';
 import '../styles/SkillsSection.css';
 
 const SkillsSection = ( ) => {
     return(
         <section className='skillsRoot'>
             <h1>My Skills</h1>
-            <section className='skillsTab'>
+            {/* <section className='skillsTab'>
                 <button>Frontend</button>
                 <button>Backend</button>
                 <button>Others</button>
@@ -15,8 +16,8 @@ const SkillsSection = ( ) => {
                 <div className='skillCard'>Typescript</div>
                 <div className='skillCard'>CSS</div>
                 <div className='skillCard'>HTML</div>
-            </section>
-            {/* <Tabs/> */}
+            </section> */}
+            <Tabs/>
         </section>
     );
 };

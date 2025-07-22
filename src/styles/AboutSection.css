@@ -9,7 +9,7 @@
     background-image: url('../assets/images/myPicBackG.jpg');
     background-size: cover;
     background-position: center;
-    padding: 2vh 0;
+    padding: 5vh 0;
     box-sizing: border-box;
 }
 
@@ -78,6 +78,7 @@
 }
 
 .footerEducation {
+    margin-top: 3%;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -87,7 +88,7 @@
 }
 
 .footerEducation h4, .footerEducation p {
-    margin: 5px;
+    margin: 1%;
     font-size: clamp(10px, 10vw, 20px);
 }
 
@@ -104,7 +105,8 @@
         width: 80%;
     }
     .MainAboutMe p{
-        text-align: justify;
+        font-size: 20px;
+        text-align: center;
     }
     .asideBox {
         text-align: center;
