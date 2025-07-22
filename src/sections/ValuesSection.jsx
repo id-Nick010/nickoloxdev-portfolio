@@ -4,6 +4,10 @@ import ValuesContainer from "../components/ValuesContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightDots, faGaugeHigh, faGears, faMagicWandSparkles} from "@fortawesome/free-solid-svg-icons";
 import "../styles/componentStyles/ValuesContainer.css"
+import { GiGiftOfKnowledge, GiStumpRegrowth } from "react-icons/gi";
+import { IoSpeedometer } from "react-icons/io5";
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { PiMagicWand } from "react-icons/pi";
 
 const ValuesSection = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -22,24 +26,27 @@ const ValuesSection = () => {
         "Art leads. I craft not for efficiency alone, but to evoke, to elevate, to inspire."
     ];
     const valueProps = [
-        {name:"Growth", imgSrc: <FontAwesomeIcon icon={faArrowUpRightDots} size='3x' color='white'/> },
-        {name:"Max Effort", imgSrc: <FontAwesomeIcon icon={faGaugeHigh} size='3x' color='white'/> },
-        {name:"Hyper-Efficient", imgSrc: <FontAwesomeIcon icon={faGears} size='3x' color='white'/> },
-        {name:"Artistic", imgSrc: <FontAwesomeIcon icon={faMagicWandSparkles} size='3x' color='white'/> },
+        {name:"Growth", imgSrc: <GiGiftOfKnowledge className="valuesIcons"/> },
+        {name:"Max Effort", imgSrc: <IoSpeedometer className="valuesIcons"/> },
+        {name:"Hyper Efficient", imgSrc: <LiaShippingFastSolid className="valuesIcons"/> },
+        {name:"Artistic", imgSrc: <PiMagicWand className="valuesIcons"/> },
     ];
     return(
         <section className="valuesRoot">
             <h1>My Guiding Compass</h1>
-            <main className="mainGridValues">
-                {valueProps.map((params, index) => (
-                    <ValuesContainer idx={index} activeComp={activeIndex} valueName={params.name}>
-                        {params.imgSrc}
-                    </ValuesContainer>
-                ))}
-            </main>
+            <div className='wrapthis'>
+                <main className="mainGridValues">
+                    {valueProps.map((params, index) => (
+                        <ValuesContainer idx={index} activeComp={activeIndex} valueName={params.name}>
+                            {params.imgSrc}
+                        </ValuesContainer>
+                    ))}
+                </main>
+            </div>
             <footer>
                 <h3>{valueQuotes[activeIndex]}</h3>
             </footer>
+            <div className="divider"></div>
         </section>
     );
 }

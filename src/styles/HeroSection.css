@@ -12,31 +12,41 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .heroMain section {
     display: flex;
-    gap: 1em;
-    justify-content: center;
-    align-items:center;
-}
-
-.heroMain section .emDashLine {
-    background-color: white;
-    width: 3em;
-    height: .2em;
-    align-self: center;
+    margin-bottom: 10px;
 }
 
 .heroMain h1, .heroMain p {
    text-align: center;
 }
 
+@media (max-width: 768px){
+    .heroMain section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .heroMain section h2{
+        margin: 0 0;
+        gap: 0px;
+        font-size: clamp(5px, 5vw, 25px);
+    }
+    .heroMain section h2:not(.heroName){
+        font-size: clamp(4px, 4vw, 20px);
+    }
+}
+
 .heroName {
     color: #f0d644;
-    font-family: 'Crustaceans';
-    font-size: 3.5em;
+    font-size: clamp(10px, 10vw, 60px);
+    margin: auto 10px;
+}
+
+.heroMain h2 {
+    font-size: clamp(10px, 20vw, 40px);
 }
 
 .mainHeroHeader {
@@ -71,18 +81,20 @@
 }
 
 .heroMain p {
-    font-size: 1.5em;
+    font-size: clamp(5px, 4vw, 1.8rem);
+    margin: 4% 8%;
 }
 
 /* Hero Footer */
 
 .heroFoot {
     justify-self: end;
-    margin-top: auto;
+    /* margin-top: auto; */
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 4%;
 }
 
 .heroFoot section:first-child {
@@ -134,4 +146,3 @@
     background-size: cover;
     z-index: -1;
 }
-

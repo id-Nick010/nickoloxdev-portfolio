@@ -1,48 +1,76 @@
 .valuesContainerRoot {
-    box-sizing: border-box;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5em;
-    width: min(50%, 200px);
-    aspect-ratio: 1/ 1;
-    color: white;
-    transition: background 0.3s ease;
-    margin: auto auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(0, 1.5rem, 2rem);
+  width: min(100%, 200px);
+  aspect-ratio: 1/ 1;
+  color: white;
+  transition: background 0.3s ease;
+  margin: auto auto;
 
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(205, 207, 56, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(205, 207, 56, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .highlight {
-    animation: pulse 1s ease-in-out;
-    /* background: #ffe23f; */
-    background: linear-gradient(135deg, rgba(231, 216, 6, 0.568), rgba(218, 230, 56, 0.082));
-    
+  animation: pulse 1s ease-in-out;
+  /* background: #ffe23f; */
+  background: linear-gradient(
+    135deg,
+    rgba(231, 216, 6, 0.568),
+    rgba(218, 230, 56, 0.082)
+  );
 }
 
 @keyframes pulse {
-    0% { background: linear-gradient(135deg, rgba(231, 216, 6, 0.568), rgba(218, 230, 56, 0.082)); 
-        transform: scale(1);
-    }
-    25% { background: linear-gradient(135deg, rgba(231, 216, 6, 0.568), rgba(218, 230, 56, 0.082)); 
-        transform: scale(0.8);
-    }
-    75% { background: linear-gradient(135deg, rgba(231, 216, 6, 0.568), rgba(218, 230, 56, 0.082)); 
-        transform: scale(1.1);
-    }
-    100% { background: linear-gradient(135deg, rgba(231, 216, 6, 0.568), rgba(218, 230, 56, 0.082));
-        transform: scale(1);
-    }
+  0% {
+    background: linear-gradient(
+      135deg,
+      rgba(231, 216, 6, 0.568),
+      rgba(218, 230, 56, 0.082)
+    );
+    transform: scale(1);
+  }
+  25% {
+    background: linear-gradient(
+      135deg,
+      rgba(231, 216, 6, 0.568),
+      rgba(218, 230, 56, 0.082)
+    );
+    transform: scale(0.8);
+  }
+  75% {
+    background: linear-gradient(
+      135deg,
+      rgba(231, 216, 6, 0.568),
+      rgba(218, 230, 56, 0.082)
+    );
+    transform: scale(1.1);
+  }
+  100% {
+    background: linear-gradient(
+      135deg,
+      rgba(231, 216, 6, 0.568),
+      rgba(218, 230, 56, 0.082)
+    );
+    transform: scale(1);
+  }
 }
 
 .valuesContainerRoot h5 {
-    font-size: 120%;
-    font-weight: 500;
-    margin: 1rem auto;
+    text-align: center;
+  font-size: clamp(12px, 2vw, 120%);
+  font-weight: 500;
+  margin: 5% auto;
 }
