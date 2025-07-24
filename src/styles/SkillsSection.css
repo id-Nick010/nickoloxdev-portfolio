@@ -54,3 +54,9 @@
     margin-bottom: 3rem;
 
 }
+
+@media (max-width: 768px){
+    .skillsRoot h1{
+        font-size: 40px;
+    }
+}

@@ -1,8 +1,6 @@
 import React, { useEffect,useState } from "react";
 import '../styles/ValuesSection.css';
 import ValuesContainer from "../components/ValuesContainer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightDots, faGaugeHigh, faGears, faMagicWandSparkles} from "@fortawesome/free-solid-svg-icons";
 import "../styles/componentStyles/ValuesContainer.css"
 import { GiGiftOfKnowledge, GiStumpRegrowth } from "react-icons/gi";
 import { IoSpeedometer } from "react-icons/io5";

@@ -5,6 +5,7 @@ import Nav from "./sections/Nav";
 import ValuesSection from "./sections/ValuesSection";
 import Silk from "./components/design/Silk";
 import SkillsSection from "./sections/SkillsSection";
+import ProjectsSection from "./sections/ProjectsSection";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <AboutSection/>
             <ValuesSection/>
             <SkillsSection/>
+            <ProjectsSection/>
         </div>
     );
 }

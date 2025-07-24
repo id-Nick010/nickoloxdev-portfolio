@@ -1,64 +1,62 @@
 .valuesRoot {
-    background-color: #012025;
-    width: 100vw;
-    min-height: 50vh;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+  background-color: #012025;
+  width: 100vw;
+  min-height: 50vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
-.valuesRoot h1 {
+/* .valuesRoot h1 {
     justify-self: center;
     font-size: 5vh;
     font-family: 'Rubik';
-    margin-bottom: 4vh;
     color: #ffe23f;
-    text-align: center;
-}
+    } */
 
 .valuesRoot h1 {
-    font-size:6vh;
-    font-family: 'Rubik';
-    color: #ffe23f;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(
-        90deg,
-        #b8860b 0%,
-        #ffd700 30%,
-        #fff8dc 50%,
-        #ffd700 70%,
-        #b8860b 100%
-    );
-    background-size: 300% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shimmer 10s linear infinite;
-
+  margin-bottom: 4vh;
+  text-align: center;
+  font-size: 6vh;
+  font-family: "Rubik";
+  color: #ffe23f;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    90deg,
+    #b8860b 0%,
+    #ffd700 30%,
+    #fff8dc 50%,
+    #ffd700 70%,
+    #b8860b 100%
+  );
+  background-size: 300% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 10s linear infinite;
 }
 
 .wrapthis {
-    width:  clamp(100px, 100vw, 60%);
-    margin:auto auto;
+  width: clamp(100px, 100vw, 60%);
+  margin: auto auto;
 }
 
 .mainGridValues {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    gap:2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2em;
 }
 
-
-.valuesRoot footer{
-    margin: 2em 15%;
-    justify-self:center;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+.valuesRoot footer {
+  margin: 2em 15%;
+  justify-self: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .valuesRoot footer h3 {
   font-size: clamp(10px, 80vw, 25px);
-  height:15vh;
+  height: 15vh;
   font-weight: bold;
   background: linear-gradient(
     -45deg,
@@ -74,27 +72,29 @@
   text-shadow: 0 0 20px rgba(255, 228, 164, 0.425);
 }
 
-
 .divider {
-    background-color:#ffe23f;
-    height: .3vh;
-    width: 90%;
-    margin-bottom: 2%;
-    border-radius:100%;
-    opacity: .5;
-    margin: auto;
+  background-color: #ffe23f;
+  height: 0.3vh;
+  width: 90%;
+  margin-bottom: 2%;
+  border-radius: 100%;
+  opacity: 0.5;
+  margin: auto;
 }
 
-.valuesIcons{
-    font-size: clamp(100%, 10vw,350%);
-    text-align: center;
+.valuesIcons {
+  font-size: clamp(100%, 10vw, 350%);
+  text-align: center;
 }
 
-@media (max-width: 768px){
-    .valuesRoot footer h3{
-        height: 35vh;
-    }
-    .mainGridValues {
-        grid-template-columns: repeat(2, minmax(100px ,50%));
-    }
+@media (max-width: 768px) {
+  .valuesRoot footer h3 {
+    height: 35vh;
+  }
+  .mainGridValues {
+    grid-template-columns: repeat(2, minmax(100px, 50%));
+  }
+  .valuesRoot h1 {
+    font-size: 40px;
+  }
 }
